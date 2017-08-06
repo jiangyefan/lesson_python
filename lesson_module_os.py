@@ -6,7 +6,7 @@
 
 import os
 
-print(os.getcwd())#当前python脚本目录(不包括文件名)
+# print(os.getcwd())#当前python脚本目录(不包括文件名)
 # print(os.chdir('d:\\'));print(os.getcwd())#当前python脚本目录(不包括文件名)
 
 # print(os.curdir)#1个点（当前目录）
@@ -48,10 +48,13 @@ print(os.getcwd())#当前python脚本目录(不包括文件名)
 #
 # print(os.path.isXXX)#显示是否是xxxx
 
-print(os.path.join('home','linux')) #路径拼接
+# print(os.path.join('home','linux')) #路径拼接
+#
+# print(os.path.getatime())#显示该文件访问时间
+# print(os.path.getmtime())#显示改文件修改时间
 
-print(os.path.getatime())#显示该文件访问时间
-print(os.path.getmtime())#显示改文件修改时间
+
+print(os.path.dirname(os.path.abspath(__file__)))
 
 
 

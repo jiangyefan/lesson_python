@@ -5,6 +5,7 @@
 
 
 class Foo:
+    a=123
     def __init__(self,name,age):
         self.name=name
         self.age=age
@@ -22,3 +23,6 @@ hasattr(obj,'k1')#反射查找对象中是否有此成员变量
 print(obj.__dict__)
 delattr(obj,'k1')
 print(obj.__dict__)#反射中删除成员变量方法
+
+
+
